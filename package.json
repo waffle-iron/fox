@@ -14,6 +14,7 @@
     "test": "npx standard | npx snazzy && npx jest",
     "build": "rm -fr build && npx tsc && chmod +x build/fox.js",
     "release": "npx semantic-release",
+    "commit": "npx git-cz",
     "travis": "npx codecov && npx travis-deploy-once 'npx semantic-release'"
   },
   "config": {
@@ -27,7 +28,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test && npm run build && . ./helpers/commitizen.sh",
+      "pre-commit": "npm run test && npm run build",
       "pre-push": "npx semantic-release"
     }
   },
