@@ -29,8 +29,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test && npm run build",
-      "pre-push": "npx semantic-release"
+      "pre-commit": "npm run test && npm run build"
     }
   },
   "jest": {
