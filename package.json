@@ -48,6 +48,7 @@
   },
   "release": {
     "branch": "next",
+    "verifyConditions": "@semantic-release/github",
     "publish": "@semantic-release/github"
   },
   "husky": {
