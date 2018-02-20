@@ -1,1 +1,2 @@
-package-lock.json
+exlude_patterns:
+- "package-lock.json"
