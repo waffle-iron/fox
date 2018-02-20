@@ -9,7 +9,7 @@ notifications:
   email: true
 node_js:
   - 'node'
-  - '7'  
+  - '8'  
 install:
   - npm install
 script:
