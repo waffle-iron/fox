@@ -14,7 +14,7 @@
     "test": "npx standard | npx snazzy && npx jest",
     "build": "rm -fr build && npx tsc && chmod +x build/fox.js",
     "release": "npx semantic-release",
-    "commit": "npx git-cz",
+    "cm": "npx git-cz",
     "travis": "npx codecov && npx travis-deploy-once 'npx semantic-release'"
   },
   "config": {
