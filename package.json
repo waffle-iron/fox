@@ -2,7 +2,10 @@
   "name": "fox",
   "version": "0.0.0",
   "main": "build/fox.js",
-  "repository": "git@github.com:vinyfc93/fox.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vinyfc93/fox.git"
+  },
   "author": "Vinícius Carvalho <vinicius.fc93@gmail.com>",
   "license": "MIT",
   "preferGlobal": true,
