@@ -20,13 +20,34 @@
     "cm": "npx git-cz",
     "travis": "npx codecov && npx travis-deploy-once 'npx semantic-release'"
   },
+  "publishConfig": {
+    "tag": "next"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.1.3",
+    "ajv": "^5.5.2",
+    "codecov": "^3.0.0",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint-plugin-typescript": "^0.8.1",
+    "husky": "^0.15.0-rc.8",
+    "jest": "^22.3.0",
+    "semantic-release": "^14.0.4",
+    "snazzy": "^7.0.0",
+    "standard": "^11.0.0",
+    "travis-deploy-once": "^4.3.4",
+    "ts-jest": "^22.0.4",
+    "typescript": "^2.7.2",
+    "typescript-eslint-parser": "^13.0.0",
+    "watch": "^1.0.2"
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "release": {
-    "branch": "corent",
+    "branch": "next",
     "publish": "@semantic-release/github"
   },
   "husky": {
@@ -57,23 +78,5 @@
     "plugins": [
       "typescript"
     ]
-  },
-  "devDependencies": {
-    "@types/jest": "^22.1.3",
-    "ajv": "^5.5.2",
-    "codecov": "^3.0.0",
-    "commitizen": "^2.9.6",
-    "cz-conventional-changelog": "^2.1.0",
-    "eslint-plugin-typescript": "^0.8.1",
-    "husky": "^0.15.0-rc.8",
-    "jest": "^22.3.0",
-    "semantic-release": "^14.0.4",
-    "snazzy": "^7.0.0",
-    "standard": "^11.0.0",
-    "travis-deploy-once": "^4.3.4",
-    "ts-jest": "^22.0.4",
-    "typescript": "^2.7.2",
-    "typescript-eslint-parser": "^13.0.0",
-    "watch": "^1.0.2"
   }
 }
