@@ -23,6 +23,7 @@
     }
   },
   "release": {
+   "branch": "corent",
    "verifyConditions": "@semantic-release/github",
    "publish": "@semantic-release/github"
   },
