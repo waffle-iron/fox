@@ -1,0 +1,13 @@
+environment:
+  matrix:
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      nodejs_version: "Current"
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      nodejs_version: "LTS"
+
+install:
+  - npm install
+
+script:
+  - npm run test
+  - npm run build
